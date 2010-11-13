@@ -4,7 +4,6 @@
 //   制加法运算，再将结果化为十进制数输出。
 //////////////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
 #include<iostream>
 
 using namespace std;
@@ -67,7 +66,7 @@ int BinaryToDecimal(int *num)
 	return result;
 }
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
 	int num1=65,num2=135;
 	int *operand1=DecimalToBinary(num1);
