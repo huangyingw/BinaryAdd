@@ -1,14 +1,7 @@
-//////////////////////////////////////////////////////////////////////////////
-//
-//  8. 输入两个正整数Ｘ，Ｙ，将Ｘ，Ｙ化为二进制数，然后将这两个二进制数作二进
-//   制加法运算，再将结果化为十进制数输出。
-//////////////////////////////////////////////////////////////////////////////
-
 #include<iostream>
 
 using namespace std;
 
-//将十进制数转化为二进制数
 int* DecimalToBinary(int num)
 {
   int* result=new int[10];
@@ -26,7 +19,6 @@ int* DecimalToBinary(int num)
   return result;
 }
 
-//二进制加法
 int *BinaryAdd(int* num1,int* num2)
 {
   int carry=0;
@@ -46,14 +38,6 @@ int *BinaryAdd(int* num1,int* num2)
   return num1;
 }
 
-void PrintArray(int* data,int length)
-{
-  for(int i=0;i<length;i++)
-    cout<<data[i];
-  cout<<endl;
-}
-
-//将二进制数转化为十进制数
 int BinaryToDecimal(int *num)
 {
   int result=0;
